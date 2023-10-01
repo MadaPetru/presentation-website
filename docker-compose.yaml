@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  personal_website:
+    container_name: personal_website
+    build:
+      context: .
+    ports:
+      - '4200:80'
+    networks:
+      - personal_website
+networks:
+  personal_website:
+    driver: bridge
+    name: shop_fe

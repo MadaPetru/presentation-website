@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-facebook-icon',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FacebookIconComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  numberOfClicksOnFacebookLink: number = 0;
 
   ngOnInit(): void {
+  }
+
+  clickFacebookLink() {
+    this.numberOfClicksOnFacebookLink++;
   }
 
 }

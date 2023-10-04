@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-github-icon',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GithubIconComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  numberOfClicksOnGithubLink: number = 0;
 
   ngOnInit(): void {
   }
 
+  clickGithubLink() {
+    this.numberOfClicksOnGithubLink++;
+  }
 }

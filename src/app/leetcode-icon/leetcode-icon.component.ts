@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-leetcode-icon',
@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LeetcodeIconComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  numberOfClicksOnLeetcodeLink: number = 0;
 
   ngOnInit(): void {
   }
 
+  clickLeetcodeLink() {
+    this.numberOfClicksOnLeetcodeLink++;
+  }
 }

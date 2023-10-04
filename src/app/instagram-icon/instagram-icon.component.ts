@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-instagram-icon',
@@ -7,9 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class InstagramIconComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+  }
+
+  numberOfClicksOnInstagramLink: number = 0;
 
   ngOnInit(): void {
+  }
+
+  clickInstagramLink() {
+    this.numberOfClicksOnInstagramLink++;
   }
 
 }

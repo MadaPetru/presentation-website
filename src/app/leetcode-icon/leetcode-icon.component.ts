@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-leetcode-icon',
   templateUrl: './leetcode-icon.component.html',
+  standalone: true,
   styleUrls: ['./leetcode-icon.component.css']
 })
 export class LeetcodeIconComponent implements OnInit {

@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-email-adress',
-  templateUrl: './email-adress.component.html',
-  styleUrls: ['./email-adress.component.css']
+    selector: 'app-email-adress',
+    templateUrl: './email-adress.component.html',
+    standalone: true,
+    styleUrls: ['./email-adress.component.css']
 })
 export class EmailAdressComponent implements OnInit {
 

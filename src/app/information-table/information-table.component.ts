@@ -4,6 +4,7 @@ import {PersonInformation} from "../PersonInformation";
 @Component({
   selector: 'app-information-table',
   templateUrl: './information-table.component.html',
+  standalone: true,
   styleUrls: ['./information-table.component.css']
 })
 export class InformationTableComponent implements OnInit {

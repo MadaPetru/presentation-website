@@ -1,9 +1,17 @@
 import {Component, OnInit} from '@angular/core';
 import {Profession} from "../profession";
+import {ViewAllWorkButtonComponent} from "../view-all-work-button/view-all-work-button.component";
+import {NgForOf, NgIf} from "@angular/common";
 
 @Component({
   selector: 'app-professions',
   templateUrl: './professions.component.html',
+  standalone: true,
+  imports: [
+    ViewAllWorkButtonComponent,
+    NgIf,
+    NgForOf
+  ],
   styleUrls: ['./professions.component.css']
 })
 export class ProfessionsComponent implements OnInit {
